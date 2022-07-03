@@ -27,9 +27,9 @@ Partial Class FrmData
         Me.LblDataV = New System.Windows.Forms.Label()
         Me.LblDataS = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.LblConnectionState = New System.Windows.Forms.Label()
         Me.txtVersionNumber = New System.Windows.Forms.TextBox()
         Me.TxtDatabasePath = New System.Windows.Forms.TextBox()
-        Me.LblConnectionState = New System.Windows.Forms.Label()
         Me.LPanel.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -89,6 +89,17 @@ Partial Class FrmData
         Me.Panel1.Size = New System.Drawing.Size(233, 67)
         Me.Panel1.TabIndex = 1
         '
+        'LblConnectionState
+        '
+        Me.LblConnectionState.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.LblConnectionState.Dock = System.Windows.Forms.DockStyle.Top
+        Me.LblConnectionState.Location = New System.Drawing.Point(0, 40)
+        Me.LblConnectionState.Name = "LblConnectionState"
+        Me.LblConnectionState.Size = New System.Drawing.Size(233, 26)
+        Me.LblConnectionState.TabIndex = 4
+        Me.LblConnectionState.Text = "State : Not connected"
+        Me.LblConnectionState.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'txtVersionNumber
         '
         Me.txtVersionNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -108,19 +119,8 @@ Partial Class FrmData
         Me.TxtDatabasePath.Name = "TxtDatabasePath"
         Me.TxtDatabasePath.Size = New System.Drawing.Size(233, 20)
         Me.TxtDatabasePath.TabIndex = 0
-        Me.TxtDatabasePath.Text = "$DatabaseLocation"
+        Me.TxtDatabasePath.Text = "D:\ScoPMas\ScoPMas\Files\ScopSQL.db"
         Me.TxtDatabasePath.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'LblConnectionState
-        '
-        Me.LblConnectionState.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.LblConnectionState.Dock = System.Windows.Forms.DockStyle.Top
-        Me.LblConnectionState.Location = New System.Drawing.Point(0, 40)
-        Me.LblConnectionState.Name = "LblConnectionState"
-        Me.LblConnectionState.Size = New System.Drawing.Size(233, 26)
-        Me.LblConnectionState.TabIndex = 4
-        Me.LblConnectionState.Text = "State : Not connected"
-        Me.LblConnectionState.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'FrmData
         '
